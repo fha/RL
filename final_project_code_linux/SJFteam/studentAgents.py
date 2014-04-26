@@ -73,13 +73,13 @@ class SJFteamAgent(BaseStudentAgent):
         closest_idx = sorted(zip(range(len(ghost_states)),ghost_dists), key=lambda t: t[1])[0][0]
         # take the action that minimizes distance to the current closest ghost
         best_action = Directions.STOP
-        best_dist = -np.inf
+        best_dist = np.inf
         for la in legalActs:
             if la == Directions.STOP:
                 continue
             successor_pos = Actions.getSuccessor(pacmanPosition,la)
             new_dist = self.distancer.getDistance(successor_pos,ghost_states[closest_idx].getPosition())
-            if new_dist > best_dist:
+            if new_dist < best_dist:
                 best_action = la
                 best_dist = new_dist
         return best_action
