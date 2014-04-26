@@ -1,0 +1,6 @@
+#!/bin/sh
+echo starting
+git add .
+git commit -m 'fahad'
+git push
+echo done
