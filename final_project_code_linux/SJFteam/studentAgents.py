@@ -87,6 +87,6 @@ class SJFteamAgent(BaseStudentAgent):
         return best_action
 
     @staticmethod
-    def getGoodCapsulesPos(observedState)
+    def getGoodCapsulesPos(observedState):
         print observedState.getCapsuleData(self);
     return
