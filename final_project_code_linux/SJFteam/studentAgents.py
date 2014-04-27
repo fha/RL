@@ -83,3 +83,7 @@ class SJFteamAgent(BaseStudentAgent):
                 best_action = la
                 best_dist = new_dist
         return best_action
+
+    @staticmethod
+    def getGoodCapsulesPos(observedState)
+        print observedState.getCapsuleData(self);
