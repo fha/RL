@@ -89,4 +89,4 @@ class SJFteamAgent(BaseStudentAgent):
     @staticmethod
     def getGoodCapsulesPos(observedState):
         print observedState.getCapsuleData(self);
-    return
+    return 0;
